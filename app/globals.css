@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply transition-colors duration-200;
+}
+
+body {
+  @apply bg-cream text-warm-dark;
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-white/30 border border-white/20;
+}
+
+.button-coral {
+  @apply px-6 py-3 bg-coral text-white rounded-2xl font-medium hover:bg-accent-red transition-all duration-300 shadow-soft hover:shadow-medium;
+}
+
+.button-secondary {
+  @apply px-6 py-3 border-2 border-coral text-coral rounded-2xl font-medium hover:bg-coral hover:text-white transition-all duration-300;
+}
+
+.card-premium {
+  @apply bg-white/50 backdrop-blur-sm border border-light-gray rounded-3xl p-6 shadow-soft hover:shadow-medium transition-all duration-300;
+}
